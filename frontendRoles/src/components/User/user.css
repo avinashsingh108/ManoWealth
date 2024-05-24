@@ -1,0 +1,64 @@
+.chat-container::-webkit-scrollbar{
+    width: 7px; 
+  }
+  
+  .admins::-webkit-scrollbar {
+    width: 4px; 
+  }
+
+  .chat-container::-webkit-scrollbar-track {
+    background: #e0e0e0; 
+    margin: 9px 0;
+    border-radius: 10px;
+  }
+  
+  .chat-container::-webkit-scrollbar-thumb{
+    background: #4779e5;
+    border-radius: 10px;
+  }
+  
+  .chat-container::-webkit-scrollbar-thumb:hover {
+    background: #bababa; 
+  }
+  @media (max-width: 767px) and (min-width: 640px) {
+    .profile{
+      margin-left: 70px;
+      width: 150px;
+      height: 80px;
+    }
+    .txt{
+      margin-left: 90px;
+      width: 400px;
+    }
+  }
+  @media (max-width: 790px) and (min-width: 768px) {
+    .txt{
+      margin-left: 10px;
+    }
+  }
+  @media (max-width: 640px) {
+    .chat-container {
+      min-height: calc(100vh - 200px); 
+    }
+  }
+  @media (max-width: 400px) {
+    .name{
+      font-size: 18px;
+      margin-top: 0px;
+    }
+    .quote{
+      font-size: 11px;
+    }
+  }
+  @media (max-width: 1279px) and (min-width: 1024px) {
+    .profile{
+      margin-left: 110px;
+      width: 150px;
+      height: 100px;
+    }
+    .txt{
+      margin-left: 90px;
+      width: 400px;
+    }
+    
+  }

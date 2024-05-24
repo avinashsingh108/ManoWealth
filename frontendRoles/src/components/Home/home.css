@@ -1,0 +1,116 @@
+.typewriter-text {
+    font-size: 2rem; 
+  }
+  .login-btn{
+    padding: 0.5em 1.4em;
+    border-radius: 28px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+    -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border: 1px solid rgba(0,0,0,0);
+    transition: transform 0.5s;
+  }
+  
+  @keyframes custom-bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-9px); 
+    }
+  }
+  
+  .animate-custom-bounce {
+    animation: custom-bounce ease-in-out infinite;
+  }
+  
+  @media (min-width: 1024px) {
+    .typewriter-text {
+      font-size: 3rem;
+    }
+  }
+
+  @media (max-width: 1023px) and (min-width: 640px) {
+    .typewriter-text {
+      font-size: 3.2rem;
+      margin-top: 20%;
+      margin-left: 50px;
+      margin-bottom: 20px;
+    }
+    .paragraph{
+        font-size: 22px;
+        line-height: 1.2;
+        margin-left: 10px;
+    }
+    .login-btn{
+        font-size: 25px;
+        margin-left: 10px;
+        padding: 16px 28px;
+    }
+  }
+
+  
+  /*extra-small screens */
+  @media (max-width: 639px) {
+    .typewriter-text {
+      font-size: 1.9rem;
+      margin-top: 18%;
+    }
+    .login-btn{
+        margin-top: 18px;
+    }
+  }
+  @media (max-width: 500px) and (min-width: 412px) {
+    .typewriter-text{
+        padding-right: 10px;
+    }
+  }
+  @media (max-width: 450px) and (min-width: 361px) {
+    .typewriter-text{
+        font-size: 2rem;
+    }
+  }
+  @media (max-width: 400px) and (min-width: 370px) {
+    .para{
+      margin-bottom: 0px;
+    }
+  }
+  @media (max-width: 412px) and (min-width: 400px) {
+    .typewriter-text {
+        min-height: 160px;
+      }
+    .paragraph{
+        padding-right: 15px;
+
+    }
+    .login-btn{
+        margin-top: 10px;
+    }
+  }
+  @media (max-width: 375px) and (min-width: 360px) {
+    .typewriter-text {
+        min-height: 146px;
+      }
+    .para{
+        margin-bottom: 0px;
+    }
+  }
+
+  @media (max-width: 359px) {
+    .typewriter-text {
+        font-size: 1.3rem;
+        min-height: 100px;
+        margin-top: 20%;
+      }
+      .image-small{
+        height: 180px;
+      }
+    .paragraph{
+        font-size: 12px;
+        padding-right: 15px;
+    }
+    .login-btn{
+        margin-top: 0px;
+        font-size: 12px;
+        padding: 2px 12px;
+    }
+  }

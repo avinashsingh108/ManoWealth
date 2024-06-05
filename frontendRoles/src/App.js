@@ -25,6 +25,7 @@ import { adminEmailContext } from "./context";
 import EditProfileForm from "./components/User/edit_profile";
 import Consultation from "./components/Home/Consultation"
 import BookingForm from "./components/Home/BookingForm";
+import BookDemo from "./components/Home/BookDemo";
 
 function App() {
   const [user, setUser] = useState({ username: '', userID: '',email:'',assigned_admin:'',assigned_admin_id:''});
@@ -107,6 +108,10 @@ function App() {
       path: '/BookingForm',
       element: <BookingForm/>
     },
+    {
+      path: '/bookdemo',
+      element: <BookDemo/>
+    }
    
   ]);
   return (

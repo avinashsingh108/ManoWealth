@@ -88,7 +88,7 @@ function Header() {
           )}
         </div>
         <div
-          className="relative mr-1 sm:mr-2 lg:mr-12 xl:mr-32"
+          className="relative mr-1 sm:mr-4"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
@@ -138,6 +138,16 @@ function Header() {
             </div>
           )} */}
         </div>
+        <div className="mr-1 sm:mr-2 lg:mr-12 xl:mr-24">
+            <button
+              onClick={() => {
+                navigate("/bookdemo");
+              }}
+              className=" px-3 py-1 sm:px-6 sm:py-2 rounded-full text-xs font-extrabold sm:text-base mr-1 sm:mr-4 sm:mb-2 md:mb-0 text-blue-600 border-2 border-blue-600 hover:bg-blue-600 hover:text-white"
+            >
+              Book a Demo
+            </button>
+          </div>
       </div>
       {showPopup && (
         <div className="fixed top-0 left-0 w-full h-full z-50 bg-gray-500 bg-opacity-50 flex justify-center items-center">

@@ -107,7 +107,7 @@ function MainPage() {
                 </button>
                 <button
                   onClick={() => {
-                    navigate("/login");
+                    navigate("/bookdemo");
                     // if (loggedin) {
                     //   navigate("/usersection");
                     // } else {
@@ -116,7 +116,7 @@ function MainPage() {
                   }}
                   className="login-btn ml-4 bg-blue-600 text-white w-fit text-base sm:text-base md:text-lg mb-6 font-semibold sm:font-bold uppercase rounded-full cursor-pointer shadow-lg z-50 transition duration-300 ease-in-out transform hover:scale-105"
                 >
-                  Login
+                  Book a Demo
                 </button>
                 
               </div>

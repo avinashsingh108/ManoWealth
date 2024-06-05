@@ -60,33 +60,6 @@ function Header() {
           </div>
         )}
 
-        <div>
-            <button
-              onClick={() => navigate("/consultation")}
-              className="px-3 py-1 sm:px-6 sm:py-2 rounded-full text-xs font-extrabold sm:text-base mr-1 sm:mr-4 sm:mb-2 md:mb-0 text-blue-600 border-2 border-blue-600 hover:bg-blue-600 hover:text-white"
-            >
-              Consult
-            </button>
-          {pathname === "/usersection" ? (
-            <button
-              onClick={handleConsultClick}
-              className="px-3 py-1 sm:px-6 sm:py-2 rounded-full text-xs font-extrabold sm:text-base mr-1 sm:mr-4 sm:mb-2 md:mb-0 text-blue-600 border-2 border-blue-600 hover:bg-blue-600 hover:text-white"
-            >
-              Consult
-            </button>
-          ) : ( 
-            token && (
-              <button
-                onClick={() => {
-                  navigate("/usersection");
-                }}
-                className="px-3 py-1 sm:px-6 sm:py-2 rounded-full text-xs font-extrabold sm:text-base mr-1 sm:mr-4 sm:mb-2 md:mb-0 text-blue-600 border-2 border-blue-600 hover:bg-blue-600 hover:text-white"
-              >
-                Profile
-              </button>
-            )
-          )}
-        </div>
         <div
           className="relative mr-1 sm:mr-4"
           onMouseEnter={handleMouseEnter}
@@ -117,6 +90,7 @@ function Header() {
               Admin
             </button>
           )}
+          
           {/* {!token && isDropdownOpen && (
             <div className="absolute right-0 sm:left-0 z-10 w-fit bg-white rounded-md shadow-lg ">
               <button
@@ -137,6 +111,33 @@ function Header() {
               </button>
             </div>
           )} */}
+        </div>
+        <div>
+            <button
+              onClick={() => navigate("/consultation")}
+              className="px-3 py-1 sm:px-6 sm:py-2 rounded-full text-xs font-extrabold sm:text-base mr-1 sm:mr-4 sm:mb-2 md:mb-0 text-blue-600 border-2 border-blue-600 hover:bg-blue-600 hover:text-white"
+            >
+              Consult
+            </button>
+          {pathname === "/usersection" ? (
+            <button
+              onClick={handleConsultClick}
+              className="px-3 py-1 sm:px-6 sm:py-2 rounded-full text-xs font-extrabold sm:text-base mr-1 sm:mr-4 sm:mb-2 md:mb-0 text-blue-600 border-2 border-blue-600 hover:bg-blue-600 hover:text-white"
+            >
+              Consult
+            </button>
+          ) : ( 
+            token && (
+              <button
+                onClick={() => {
+                  navigate("/usersection");
+                }}
+                className="px-3 py-1 sm:px-6 sm:py-2 rounded-full text-xs font-extrabold sm:text-base mr-1 sm:mr-4 sm:mb-2 md:mb-0 text-blue-600 border-2 border-blue-600 hover:bg-blue-600 hover:text-white"
+              >
+                Profile
+              </button>
+            )
+          )}
         </div>
         <div className="mr-1 sm:mr-2 lg:mr-12 xl:mr-24">
             <button
